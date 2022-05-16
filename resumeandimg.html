@@ -7,98 +7,121 @@
     <meta name="keywords" content="ivan, resume, best">
     <meta name="description" content="Этот сайт - пробное онлайн резюме Вирейкина Ивана"> 
     <title>resume_ivan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_color.css">
 </head>
     <body>
-        <img src="sonik.jpg" width="200" alt="тут д.б. фото соника">
 
-        <h1>Sonic the Hedgehog</h1>
+        <div class="container">
 
-        <p> Я главный герой игры <strong>Sonic the Hedgehog</strong> компании <strong>Sega</strong> и мой главный враг <strong>Доктор</strong>.</p>
+            <div class="info"> 
 
-        <p> <em> Я люблю собирать колечки. </em></p>
-        <hr>
-        <p> <strong>Список социальных сетей:</strong> </p> 
-        <p> <a href="https://www.sega.com/games/sonic-hedgehog" target="_blank">Sega</a> | <a href="https://www.igromania.ru/game/series/1320/Sonic_the_Hedgehog.html" target="_blank">Игромания</a> </p>
+                <img src="sonik.jpg" alt="тут д.б. фото соника" class="avatar">
+
+                <div class="info-text">
+                    <h1>Sonic the Hedgehog</h1>
+
+                    <p> Я главный герой игры <strong>Sonic the Hedgehog</strong> компании <strong>Sega</strong> и мой главный враг <strong>Доктор</strong>.</p>
+
+                    <p> <em> Я люблю собирать колечки. </em></p>
+                    <br>
+                    <p> <strong>Список социальных сетей:</strong> </p> 
+                    <div>
+                        <p> <a href="https://www.sega.com/games/sonic-hedgehog" target="_blank">Sega</a> |
+                            <a href="https://www.igromania.ru/game/series/1320/Sonic_the_Hedgehog.html" target="_blank">Игромания</a> </p>
+                    
+                    </div>
+
+                </div>    
+                
+            </div> 
+
+            <div class="card hobby">
+                <h1>Мои хобби</h1>
+                <ol class="list">
+                    <li>Кататься</li>
+                    <li>Бегать</li>
+                    <li>Прыгать</li>
+                    <li>Подмигивать</li>
+                    <li>Терять колечки</li>
+                </ol>
+            </div>
 
 
-        <h1>Мои хобби</h1>
-        <ol>
-            <li>Кататься</li>
-            <li>Бегать</li>
-            <li>Прыгать</li>
-            <li>Подмигивать</li>
-            <li>Терять колечки</li>
-        </ol>
+            <div class="card exp" >
+                <h1>Опыт работы</h1>
 
-        <h1>Опыт работы</h1>
+                <table class="table">
+                    
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                        </tr>        
+                    </thead>
 
-        <table>
+                    <tbody>
+                    <tr>
+                        <td>Army</td>
+                        <td>Soldier</td>
+                        <td>2017-2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>TNF</td>
+                        <td>Electrician</td>
+                        <td>2018-2020</td>
+                    </tr>
+
+                    <tr>
+                        <td>TNF</td>
+                        <td>Power Engineer</td>
+                        <td>2020-2021</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rigintel</td>
+                        <td>Electronic Engineer</td>
+                        <td>2021-2021</td>
+                    </tr>
+
+                    <tr>
+                        <td>NSA</td>
+                        <td>Software Engineer</td>
+                        <td>2021-p.t.</td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
             
-            <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Должность</th>
-                    <th>Год</th>
-                </tr>        
-            </thead>
+            <form class="form">
+                <h1>Связаться со мной</h1>
 
-            <tbody>
-            <tr>
-                <td>Army</td>
-                <td>Soldier</td>
-                <td>2017-2018</td>
-            </tr>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
 
-            <tr>
-                <td>TNF</td>
-                <td>Electrician</td>
-                <td>2018-2020</td>
-            </tr>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
 
-            <tr>
-                <td>TNF</td>
-                <td>Power Engineer</td>
-                <td>2020-2021</td>
-            </tr>
+                    <div class="form-group">
+                        <label for="message">Введите сообщение:</label>
+                        
+                        <textarea name="" id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+                    </div>
 
-            <tr>
-                <td>Rigintel</td>
-                <td>Electronic Engineer</td>
-                <td>2021-2021</td>
-            </tr>
+                <button type="submit" class="btn">Отправить!</button>
+            </form>
 
-            <tr>
-                <td>NSA</td>
-                <td>Software Engineer</td>
-                <td>2021-p.t.</td>
-            </tr>
-
-            </tbody>
-
-        </table>
-
-
-        <h1>Связаться со мной</h1>
-
-        <form>
-
-            <div>
-                <label for="name">Ваше имя:</label>
-                <input type="text" id="name" placeholder="Введите имя">
-            </div>
-
-            <div>
-                <label for="email">Ваш email:</label>
-                <input type="email" id="email" placeholder="Введите email">
-            </div>
-
-            <div>
-                <label for="message">Введите сообщение:</label>
-                <br>
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
-            </div>
-
-            <button type="submit">Отправить!</button>
-        </form>
+        </div>
     </body>
 </html>
